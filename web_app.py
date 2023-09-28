@@ -3,7 +3,13 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
+st.set_page_config(
+    page_title="Indicative Price Creator",
+    page_icon="📈",
+    layout="centered",  # or "wide"
+    initial_sidebar_state="expanded",  # "auto" or "expanded" or "collapsed"
+    theme="dark"  # Set the theme to "dark" for a black background
+)
 
 plt.style.use('dark_background')
 # Title
