@@ -87,6 +87,9 @@ ax.plot(weighted_dataframe["Month"], weighted_dataframe["Price"], color = "r", a
 st.pyplot(fig)
 
 
+
+
 transfer_price = round(sum(weighted_price), 2)
+st.title(f"The transfer price will be {transfer_price + tot_brick}")
 with st.sidebar:
     st.title(f"The transfer price will be {transfer_price + tot_brick}")
