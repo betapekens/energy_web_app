@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+backgroundColor = "#F0F0F0"
 plt.style.use('dark_background')
 # Title
 st.title("Indicative price creator")
