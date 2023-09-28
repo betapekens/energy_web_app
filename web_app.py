@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+plt.style.use('dark_background')
+
 # Title
 st.title("Indicative price creator")
 
@@ -31,7 +33,7 @@ gas_price = pd.DataFrame({"Price":prices,
 fig, ax = plt.subplots()
 ax.plot(gas_price["Month"], gas_price["Price"], color = "#048494")
 ax.legend("Price")
-ax.set_facecolor("#0E1117")
+#ax.set_facecolor("#0E1117")
 st.pyplot(fig)
 
 
@@ -58,7 +60,7 @@ if st.checkbox("Gas Modulation"):
     ax.spines['right'].set_visible(False)  
     ax.spines['bottom'].set_visible(False) 
     ax.spines['left'].set_visible(False)   
-    ax.set_facecolor("#0E1117")
+    #ax.set_facecolor("#0E1117")
     st.pyplot(fig)
 
 
@@ -81,7 +83,7 @@ weighted_dataframe = pd.DataFrame({"Price":weighted_price,
 st.text("Weighted price per month")
 fig, ax = plt.subplots()
 ax.plot(weighted_dataframe["Month"], weighted_dataframe["Price"], color = "r", alpha=0.7)
-ax.set_facecolor("#0E1117")
+#ax.set_facecolor("#0E1117")
 st.pyplot(fig)
 
 
